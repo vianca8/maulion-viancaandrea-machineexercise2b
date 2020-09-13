@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://wallpapersite.com/images/wallpapers/mountains-1920x1080-asus-zenfone-stock-hd-5813.jpg) no-repeat;
+  background-size: cover;
+}
+
+.box {
+  width: 400px;
+  height: 616px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 40px;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  margin-left: 25%;
+  margin-right: 5%;
+  color: black;
+  font-family: Amatic SC;
+}
+.box-img {
+  border-radius: 50%;
+  width: 200x;
+  height: 200px;
+}
+.box h1 {
+  margin-top: 30px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+.box p {
+  font-family: Arial;
+  font-style: italic;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 26.4px
+}
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  text-align: center;
+}
+ul{
+  margin:0;  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: black;
+  text-decoration:none;
+  font-size: 40px;
+  transition: all- easi-in-out 250ms;
+}
+.box li a:hover{
+  color: gray;
+}
+
+
+.box2-img {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+}
+
+.container smallboxes{
+  width: 95%x;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 10px 10px 10px 15px;
+  padding: 20px;
+
+}
+.container ul {
+  padding: 0px;
+  margin-left: 5%;
+}
+#li{
+  list-style: none;
+  float: left;
+  width: 220px;
+  height: 300px;
+  background-color: white;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+#slider {
+   margin: 0 auto;
+   width: 890px;
+   max-width: 100%;
+   text-align: center;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   background: #fff;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+
+.slide h2{
+  margin-bottom: 15px;
+  text-align: left;
+}
+.slide h6{
+  text-align: left;
+}
+#slides .slide_1 {
+   background: black;
+}
+#slides .slide_2 {
+   background: black;
+}
+#slides .slide_3 {
+   background: black;
+}
+#slides .slide_4 {
+   background: black;
+}
+
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #444;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #ccc;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
